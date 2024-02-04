@@ -1,11 +1,13 @@
 package com.famous.flightreservation.entities;
 
+import jakarta.persistence.Entity;
+
 import java.sql.Timestamp;
 import java.util.Date;
 
-public class Flight {
+@Entity
+public class Flight extends AbstractEntity {
 
-    private Long id;
     private String flightNumber;
     private String operatingAirlines;
     private String departureCity;
@@ -13,13 +15,6 @@ public class Flight {
     private Date dateOfDeparture;
     private Timestamp estimatedDepartureTime;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getFlightNumber() {
         return flightNumber;

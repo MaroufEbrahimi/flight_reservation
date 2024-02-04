@@ -1,20 +1,15 @@
 package com.famous.flightreservation.entities;
 
-public class Reservation {
+import jakarta.persistence.Entity;
 
-    private Long id;
+@Entity
+public class Reservation extends AbstractEntity {
+
     private Boolean checkedIn;
     private int numberOfBags;
     private Passenger passenger;
     private Flight flight;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Boolean getCheckedIn() {
         return checkedIn;
