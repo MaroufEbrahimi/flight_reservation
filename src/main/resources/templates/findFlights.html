@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Find Flights</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles/findFlights.css}">
 </head>
 <body>
     <h1>Welcome To Find Flight Page</h1>
+    <form action="findFlights" method="post">
+        <label for="from">From</label>
+        <input type="text" id="from" name="from" />
+
+        <label for="to">To</label>
+        <input type="text" id="to" name="to" />
+
+        <label for="departureDate">Departure Date</label>
+        <input type="text" id="departureDate" name="departureDate" />
+
+        <button type="submit" class="button" role="button">Search</button>
+    </form>
 </body>
 </html>
