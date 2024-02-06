@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Find Flights</title>
     <link rel="stylesheet" type="text/css" th:href="@{/styles/findFlights.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/styles/style.css}">
 </head>
 <body>
     <h1>Welcome To Find Flight Page</h1>
@@ -17,7 +18,9 @@
         <label for="departureDate">Departure Date</label>
         <input type="text" id="departureDate" name="departureDate" />
 
-        <button type="submit" class="button" role="button">Search</button>
+        <div class="button_container">
+            <button type="submit" class="button" role="button">Search</button>
+        </div>
     </form>
 </body>
 </html>

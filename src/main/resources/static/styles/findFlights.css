@@ -24,31 +24,14 @@ form {
 /* Form labels */
 label {
     display: block;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
 }
 
 /* Form input fields */
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     box-sizing: border-box;
 }
 
-/* Search button */
-.button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-.button:hover {
-    background-color: #0056b3;
-}

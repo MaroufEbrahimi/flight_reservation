@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Register User</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles/style.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/styles/login/registerUser.css}">
 </head>
 <body>
@@ -25,7 +26,9 @@
             <label for="confirmPassword">Confirm Password</label>
             <input type="password" id="confirmPassword" name="confirmPassword" required>
 
-            <button type="submit" class="button" role="button">Register</button>
+            <div class="button_container">
+                <button type="submit" class="button" role="button">Register</button>
+            </div>
         </form>
     </div>
 </div>

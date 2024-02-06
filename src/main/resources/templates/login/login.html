@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>User Login</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles/style.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/styles/login/registerUser.css}">
 </head>
 <body>
@@ -18,7 +19,9 @@
 
             <div class="error" th:text="${error}"></div>
 
-            <button type="submit" class="button" role="button">Login</button>
+            <div class="button_container">
+                <button type="submit" class="button" role="button">Login</button>
+            </div>
         </form>
     </div>
 </div>
