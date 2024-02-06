@@ -23,8 +23,7 @@
         <td th:text="${flight.departureCity}"></td>
         <td th:text="${flight.arrivalCity}"></td>
         <td th:text="${flight.estimatedDepartureTime}"></td>
-        <td><a th:href="@{'/showCompleteReservation/' + ${flight.id}}">Select</a></td>
-<!--        <td><a th:href="@{'/showCompleteReservation/' + ${flight.id}}" th:text="${flight.arrivalCity}">Select</a></td>-->
+        <td><a th:href="@{'showCompleteReservation?flightId='+${flight.id}}">Select</a></td>
     </tr>
     </tbody>
 </table>

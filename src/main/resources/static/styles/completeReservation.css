@@ -1,0 +1,97 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Flight details styles */
+.flight-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 80px;
+}
+
+.flight-details .detail {
+    margin-bottom: 10px;
+}
+
+.flight-details .detail span {
+    font-weight: bold;
+    color: #007bff; /* Change color as needed */
+}
+
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Column styles */
+.column {
+    width: 38%; /* Adjust width as needed */
+    margin: 0 20px; /* Add spacing between columns */
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button container styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+

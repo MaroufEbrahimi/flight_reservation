@@ -1,0 +1,106 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Complete Reservation</title>-->
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/styles/completeReservation.css}">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Complete Reservation</h1>-->
+<!--Airline: <p th:text="${flight.operatingAirlines}"></p><br/>-->
+<!--Departure City: <p th:text="${flight.departureCity}"></p><br/>-->
+<!--Arrival City: <p th:text="${flight.arrivalCity}"></p><br/>-->
+
+<!--<form action="completeReservation" method="post">-->
+<!--    <h2>Passenger Details</h2>-->
+<!--    <label for="passengerFirstName">First Name</label>-->
+<!--    <input type="text" id="passengerFirstName" name="passengerFirstName"/>-->
+
+<!--    <label for="passengerLastName">Last Name</label>-->
+<!--    <input type="text" id="passengerLastName" name="passengerLastName"/>-->
+
+<!--    <label for="passengerEmail">Email</label>-->
+<!--    <input type="email" id="passengerEmail" name="passengerEmail"/>-->
+
+<!--    <label for="passengerPhone">Phone</label>-->
+<!--    <input type="text" id="passengerPhone" name="passengerPhone"/>-->
+
+<!--    <h2>Card Details</h2>-->
+<!--    <label for="nameOnTheCard">Name On The Card</label>-->
+<!--    <input type="text" id="nameOnTheCard" name="nameOnTheCard"/>-->
+
+<!--    <label for="cardOn">Card On</label>-->
+<!--    <input type="text" id="cardOn" name="cardOn"/>-->
+
+<!--    <label for="expiryDate">Expiry Date</label>-->
+<!--    <input type="text" id="expiryDate" name="expiryDate"/>-->
+
+<!--    <label for="threeDigitSecurityCode">Three Digit Security Code</label>-->
+<!--    <input type="text" id="threeDigitSecurityCode" name="threeDigitSecurityCode"/>-->
+
+<!--    <input type="hidden" name="flightId" th:value="${flight.id}" />-->
+<!--    <button type="submit" class="button" role="button">Confirm</button>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete Reservation</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles/completeReservation.css}">
+</head>
+<body>
+<h1>Complete Reservation</h1>
+<!-- Flight details -->
+<div class="flight-details">
+    <p class="detail">Airline: <span th:text="${flight.operatingAirlines}"></span></p>
+    <p class="detail">Departure City: <span th:text="${flight.departureCity}"></span></p>
+    <p class="detail">Arrival City: <span th:text="${flight.arrivalCity}"></span></p>
+</div>
+<div class="container">
+    <div class="column">
+        <h2>Passenger Details</h2>
+        <form action="completeReservation" method="post">
+            <label for="passengerFirstName">First Name</label>
+            <input type="text" id="passengerFirstName" name="passengerFirstName"/>
+
+            <label for="passengerLastName">Last Name</label>
+            <input type="text" id="passengerLastName" name="passengerLastName"/>
+
+            <label for="passengerEmail">Email</label>
+            <input type="email" id="passengerEmail" name="passengerEmail"/>
+
+            <label for="passengerPhone">Phone</label>
+            <input type="text" id="passengerPhone" name="passengerPhone"/>
+        </form>
+    </div>
+    <div class="column">
+        <h2>Card Details</h2>
+        <form action="completeReservation" method="post">
+            <label for="nameOnTheCard">Name On The Card</label>
+            <input type="text" id="nameOnTheCard" name="nameOnTheCard"/>
+
+            <label for="cardOn">Card On</label>
+            <input type="text" id="cardOn" name="cardOn"/>
+
+            <label for="expiryDate">Expiry Date</label>
+            <input type="text" id="expiryDate" name="expiryDate"/>
+
+            <label for="threeDigitSecurityCode">Three Digit Security Code</label>
+            <input type="text" id="threeDigitSecurityCode" name="threeDigitSecurityCode"/>
+
+            <input type="hidden" name="flightId" th:value="${flight.id}"/>
+            <!--            <button type="submit" class="button" role="button">Confirm</button>-->
+        </form>
+    </div>
+</div>
+<!-- Centered button -->
+<div class="button-container">
+    <form action="completeReservation" method="post">
+        <button type="submit" class="button" role="button">Confirm</button>
+    </form>
+</div>
+</body>
+</html>
