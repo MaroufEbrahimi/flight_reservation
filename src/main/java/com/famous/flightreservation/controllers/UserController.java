@@ -21,9 +21,15 @@ public class UserController {
         return "login/registerUser";
     }
 
+
     @RequestMapping(value = "/registerUser", method = RequestMethod.POST)
     public String register(@ModelAttribute("user") User user) {
         userRepository.save(user);
+        return "login/login";
+    }
+
+    @RequestMapping("/showLogin")
+    public String showLoginPage() {
         return "login/login";
     }
 
