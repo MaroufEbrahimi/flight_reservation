@@ -83,4 +83,19 @@ public class ReservationRequest {
     public void setThreeDigitSecurityCode(String threeDigitSecurityCode) {
         this.threeDigitSecurityCode = threeDigitSecurityCode;
     }
+
+    @Override
+    public String toString() {
+        return "ReservationRequest{" +
+                "flightId=" + flightId +
+                ", passengerFirstName='" + passengerFirstName + '\'' +
+                ", passengerLastName='" + passengerLastName + '\'' +
+                ", passengerEmail='" + passengerEmail + '\'' +
+                ", passengerPhone='" + passengerPhone + '\'' +
+                ", nameOnTheCard='" + nameOnTheCard + '\'' +
+                ", cardNumber='" + cardNumber + '\'' +
+                ", expirationDate='" + expirationDate + '\'' +
+                ", threeDigitSecurityCode='" + threeDigitSecurityCode + '\'' +
+                '}';
+    }
 }
